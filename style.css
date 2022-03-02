@@ -1,0 +1,100 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-link{
+  color: black;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  position: absolute;
+
+  display: block;
+  top: 0;
+
+  left: 0;
+
+  z-index: -1;
+}
+
+.nav-container {
+  background-color: #dddd;
+}
+.nav-link:hover {
+  color: white;
+}
+.nav-item:hover {
+  background-color: #34495e;
+  color: white;
+  cursor: pointer;
+  transition: all .7s ease-in-out;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+section {
+  background-color: rgba(66, 73, 73, 0.5);
+  height: 100vh;
+}
+.details {
+  padding-top: 300px;
+}
+#aboutme {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  
+}
+.social_logo {
+  cursor: pointer;
+}
+#experiences {
+  color: white;
+  background-image: url("./images/experience.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#experiences::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.exp{
+  position: relative;
+  color: whitesmoke;
+  z-index: 2;
+}
+.gear {
+  width: 60px;
+  animation-name: gearmove;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes gearmove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#certifications {
+  background-image: url("./images/certificate.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
